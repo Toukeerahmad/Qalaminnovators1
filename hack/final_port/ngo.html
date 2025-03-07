@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>NGOs help=page</title>
+          <link rel="icon" type="image/png" href="about_imgs/flood.jpg">
+
+          <link rel="stylesheet" href="style.css">
+          <link rel="stylesheet" href="ngo.css">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+          <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+          <div class="hero">
+                    <header class="nav">
+                              <!-- <img src="logo.png" alt="logo"> -->
+                               <spam>Qalam <spam style="color: red;">Innovators</spam></spam>
+                              <div class="menu-btn" onclick="toggleMenu()">
+                                  <i class="fa-solid fa-bars"></i>  
+                              </div>
+                              <ul class="desktop-menu">
+                                <li><a href="index.html">Home</a></li>
+                                                  <li><a href="about.html" target="_blank">About</a></li>
+                                                  <li><a href="lifehacks.html" target="_blank">lifehacks</a></li>
+                                                  <li><a href="project.html" target="_blank">Projects</a></li>
+                                                  <li><a href="ngo.html" target="_blank">NGO</a></li>
+                                                  <li><a href="contact.html" target="_blank">Contact</a></li>
+                            </ul>
+                        </header>
+                
+                        <div class="mobile-menu" id="mobileMenu">
+                            <div class="close-btn" onclick="toggleMenu()">
+                                <i class="fa-solid fa-xmark"></i>
+                            </div>
+                            <ul>
+                                <li><a href="index.html" target="_blank">Home</a></li>
+                                <li><a href="about.html" target="_blank">About</a></li>
+                                <li><a href="lifehacks.html" target="_blank">lifehacks</a></li>
+                                <li><a href="project.html" target="_blank">Projects</a></li>
+                                <li><a href="ngo.html" target="_blank">NGO</a></li>
+                                <li><a href="contact.html" target="_blank">Contact</a></li>
+                            </ul>
+                          </div>
+<section class="featured">
+    <h2 class="title">support <span>NGO</span></h2>
+   
+
+    <div class="items">
+        <div class="skill_list">
+          <a href="https://pmcares.gov.in/en/" target="_blank"><img src="ngoimages/pm.webp" alt="Shirt 1"></a>  
+            <p class="stitle">PM care fund</p>
+         
+            <p class="note">Support the PM CARES Fund to aid disaster relief and recovery. Your contribution helps those in need. 💙🇮🇳 Every donation makes a difference in saving lives!</p>
+     
+        </div>
+
+        <div class="skill_list">
+           <a href="https://helpageindia.org/" target="_blank"><img src="ngoimages/red.webp" alt="Shirt 2" height="250px"></a> 
+            <p class="stitle">Red Cross Society</p>
+          
+            <p class="note"> Provides emergency assistance, disaster relief, and health services. Your support helps save lives in crisis situations. </p>
+  
+        </div>
+
+        <div class="skill_list">
+            <a href="https://balrakshabharat.org/" target="_blank"><img src="ngoimages/child.jpg" alt="Shirt 3"></a>
+            <p class="stitle">Save the Children India </p>
+          
+            <p class="note"> Provides emergency aid, food, and education to children affected by disasters and crises. Be a part of the change! </p>
+           
+        </div>
+
+        <div class="skill_list">
+           <a href="https://thecareindia.org/" target="_blank"><img src="ngoimages/care.avif" alt="Shirt 4"></a> 
+            <p class="stitle">Care India</p>
+            
+            <p class="note">Works towards disaster preparedness and response, supporting women and children in vulnerable communities. Your help brings hope! </p>
+            
+        </div>
+    </div>
+</section>
+
+
+
+
+
+          </div>        
+    <script>
+          function toggleMenu() {
+              const mobileMenu = document.getElementById('mobileMenu');
+              mobileMenu.classList.toggle('show-menu');
+          }
+      </script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Our Features</title>
+          <link rel="stylesheet" href="style.css">
+          <link rel="stylesheet" href="ngo.css">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+          <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+          <div class="hero">
+                    <header class="nav">
+                              <!-- <img src="logo.png" alt="logo"> -->
+                               <spam>Qalam <spam style="color: red;">Innovators</spam></spam>
+                              <div class="menu-btn" onclick="toggleMenu()">
+                                  <i class="fa-solid fa-bars"></i>  
+                              </div>
+                              <ul class="desktop-menu">
+                                        <li><a href="index.html">Home</a></li>
+                                                          <li><a href="about.html" target="_blank">About</a></li>
+                                                          <li><a href="lifehacks.html" target="_blank">lifehacks</a></li>
+                                                          <li><a href="project.html" target="_blank">Projects</a></li>
+                                                          <li><a href="ngo.html" target="_blank">NGO</a></li>
+                                                          <li><a href="contact.html" target="_blank">Contact</a></li>
+                                    </ul>
+                                </header>
+                        
+                                <div class="mobile-menu" id="mobileMenu">
+                                    <div class="close-btn" onclick="toggleMenu()">
+                                        <i class="fa-solid fa-xmark"></i>
+                                    </div>
+                                    <ul>
+                                        <li><a href="index.html" target="_blank">Home</a></li>
+                                        <li><a href="about.html" target="_blank">About</a></li>
+                                        <li><a href="lifehacks.html" target="_blank">lifehacks</a></li>
+                                        <li><a href="project.html" target="_blank">Projects</a></li>
+                                        <li><a href="ngo.html" target="_blank">NGO</a></li>
+                                        <li><a href="contact.html" target="_blank">Contact</a></li>
+                                    </ul>
+                          </div>
+<section class="featured">
+    <h2 class="title">Our <span>Features</span></h2>
+   
+
+    <div class="items" >
+        <div class="skill_list" >
+          <a href="https://toukeerahmad-yaseen-456doctor-vsmmfz.streamlit.app/" target="_blank"><img src="features/doctor-ai.webp" alt="Shirt 1"></a>  
+            <p class="stitle">AI doctor </p>
+         
+            <p class="note">We developed an AI Doctor that analyzes uploaded medical images and provides professional diagnostic insights, aiding in disaster scenarios where medical access is limited. The system leverages advanced AI models to detect conditions and offer preliminary assessments. Designed for emergency response, it enhances medical accessibility and decision-making.</p>
+     
+        </div>
+
+        <div class="skill_list">
+           <a href="https://toukeerahmad-finalchat-chatbotdoctor-byqfz0.streamlit.app/" target="_blank"><img src="features/chatbot.jpg" alt="Shirt 2" height="250px"></a> 
+            <p class="stitle">chat-bot</p>
+          
+            <p class="note">We developed an AI Chatbot that understands medical issues, explains their causes, and provides detailed prescription insights. Designed for disaster scenarios, it offers instant guidance and preliminary assessments, ensuring quick and accessible healthcare support when medical professionals are unavailable.</p>
+  
+        </div>
+
+        <div class="skill_list">
+            <a href="https://toukeerahmad-disaster-management-demo3-ywumc8.streamlit.app/" target="_blank"><img src="features/astro.jpg" alt="Shirt 3"></a>
+            <p class="stitle">Disaster predictor </p>
+          
+            <p class="note"> We developed a disaster prediction platform that analyzes historical and real-time data to forecast potential disasters. By detecting patterns and anomalies, it provides timely alerts, helping communities prepare and respond effectively to imminent threats. </p>
+           
+        </div>
+        <div class="skill_list" >
+            <a href="#" target="_blank"><img src="features/drone.jpg" alt="Shirt 1"></a>  
+              <p class="stitle">Drone-system </p>
+           
+              <p class="note">An autonomous drone system uses GPS, IMUs, and computer vision for precise navigation and stability. Path planning algorithms like A* or RRT optimize routes while avoiding real-time obstacles. Sensor fusion integrates data from LiDAR, cameras, and other sensors for effective control and decision-making. AI and machine learning enable the drone to adapt to dynamic environments, improving efficiency and safety without operator intervention.</p>
+       
+          </div>
+    </div>
+</section>
+
+          </div>        
+    <script>
+          function toggleMenu() {
+              const mobileMenu = document.getElementById('mobileMenu');
+              mobileMenu.classList.toggle('show-menu');
+          }
+      </script>
+</body>
+</html>

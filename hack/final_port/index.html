@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qalam Innovators</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header class="nav">
+            <!-- <img src="logo.png" alt="logo"> -->
+             <spam>Qalam <spam style="color: red;"> Innovators</spam></spam>
+            <div class="menu-btn" onclick="toggleMenu()">
+                <i class="fa-solid fa-bars"></i>  
+            </div>
+            <ul class="desktop-menu">
+                <li><a href="index.html">Home</a></li>
+                                  <li><a href="about.html" target="_blank">About</a></li>
+                                  <li><a href="lifehacks.html" target="_blank">lifehacks</a></li>
+                                  <li><a href="project.html" target="_blank">Projects</a></li>
+                                  <li><a href="ngo.html" target="_blank">NGO</a></li>
+                                  <li><a href="contact.html" target="_blank">Contact</a></li>
+            </ul>
+        </header>
+
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="close-btn" onclick="toggleMenu()">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <ul>
+                <li><a href="index.html" target="_blank">Home</a></li>
+                <li><a href="about.html" target="_blank">About</a></li>
+                <li><a href="lifehacks.html" target="_blank">lifehacks</a></li>
+                <li><a href="project.html" target="_blank">Projects</a></li>
+                <li><a href="ngo.html" target="_blank">NGO</a></li>
+                <li><a href="contact.html" target="_blank">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- <img src="gi.png" class="backimg"> -->
+
+
+        <div class="main" style="position: absolute; left: 5%; top: 50%; transform: translateY(-50%); text-align: left;">
+            <p>Hi,</p>
+            <!-- <p>I am <span>Toukeer</span></p> -->
+            <p class="typing-effect">Welcome from Qalam Innovators</p>
+            <!-- <button>Download CV</button> -->
+        </div>
+
+        <video class="video" src="about_imgs/disaster.mp4" autoplay loop muted></video>
+        <footer>
+            <div class="media">
+                <a href="https://www.instagram.com/toukeer_125/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/toukeer-saiyad-2995562a7/" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/Toukeerahmad" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://wa.me/7892274161" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            mobileMenu.classList.toggle('show-menu');
+        }
+    </script>
+</body>
+</html>

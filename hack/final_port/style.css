@@ -1,0 +1,522 @@
+/* General Styles */
+* {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: 'Poppins', sans-serif;
+      }
+      
+      html, body {
+          background-color: black;
+          color: white;
+          overflow: hidden;
+      } 
+      
+      /* Container */
+      .container {
+          width: 100%;
+          height: 100vh;
+          position: relative;
+      }
+      
+      .video{
+        width: 100%;
+        height: 70%;
+        margin-top: 8%;
+        margin-left: 30%;
+      }
+      /* Navbar */
+      .nav {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 20px;
+      }
+      
+      .nav img {
+          width: 100px;
+      }
+
+.nav ul {
+          list-style: none;
+          display: flex;
+          gap: 30px;
+      }
+      .nav ul li a {
+          text-decoration: none;
+          color: white;
+          font-size: 1rem;
+          font-weight: 500;
+          transition: color 0.3s ease;
+      }
+      
+      .nav ul li a:hover {
+          color: red;
+      }
+      
+      /* Desktop Menu */
+      .desktop-menu {
+          list-style: none;
+          display: flex;
+          gap: 30px;
+      }
+      
+      .desktop-menu li a {
+          text-decoration: none;
+          color: white;
+          font-size: 1rem;
+          font-weight: 500;
+          transition: color 0.3s ease;
+      }
+      
+      .desktop-menu li a:hover {
+          color: red;
+      }
+      
+      /* Mobile Menu Button */
+      .menu-btn {
+          display: none;
+          font-size: 1.5rem;
+          cursor: pointer;
+          color: white;
+      }
+      
+      /* Mobile Dropdown Menu */
+      .mobile-menu {
+           position: fixed; 
+                   top: 0;
+          /* left: -100%; */
+          width: 250px;
+          right: -100%;
+          height: 100vh;
+          background: rgb(47, 43, 43);
+          border-left: 2px solid red;
+          display: flex;
+          flex-direction: column;
+          padding: 20px;
+          transition: left 0.3s ease-in-out;
+          z-index: 999;
+      }
+      
+      .mobile-menu.show-menu {
+          /* left: 0; */
+          right: 0;
+        }
+      
+      .mobile-menu .close-btn {
+          background: red;
+          color: white;
+          text-align: right;
+          padding: 10px;
+          font-size: 1.2rem;
+          cursor: pointer;
+      }
+      
+      .mobile-menu ul {
+          list-style: none;
+          padding: 20px 0;
+      }
+      
+      .mobile-menu ul li {
+          padding: 10px 0;
+      }
+      
+      .mobile-menu ul li a {
+          text-decoration: none;
+          color: white;
+          font-size: 1.2rem;
+          transition: color 0.3s ease;
+      }
+      
+      .mobile-menu ul li a:hover {
+          color: red;
+      }
+      
+      /* Background Image */
+      .backimg {
+          width: 35%;
+          position: absolute;
+          right: 30%;
+          top: 50%;
+          transform: translateY(-50%);
+      }
+      
+      /* Main Content */
+      .main {
+          position: absolute;
+          top: 50%;
+          left: 5%;
+          transform: translateY(-50%);
+          font-size: 2.5rem;
+          font-weight: 600;
+      }
+      
+      .main span {
+          color: red;
+      }
+      .typing-effect {
+          border-right: 2px solid;
+          white-space: nowrap;
+          overflow: hidden;
+          width: 0;
+          animation: typing 4s steps(30, end) infinite, blink-caret 0.75s step-end infinite;
+      }
+      
+      /* Button */
+      button {
+          margin-top: 20px;
+          padding: 10px 20px;
+          color: white;
+          background-color: red;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          font-size: 1rem;
+          transition: background-color 0.3s ease;
+      }
+      
+      button:hover {
+          background-color: darkred;
+      }
+      
+/* Footer */
+footer {
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          text-align: center;
+      }
+      
+      .media {
+          display: flex;
+          justify-content: center;
+          gap: 90px;
+          padding: 20px;
+      }
+      
+      .media a {
+          font-size: 1.5rem;
+          color: white;
+          transition: color 0.3s ease;
+      }
+      
+      .media a:hover {
+          color: red;
+      }
+      
+      /* Info Box */
+      .finalinfo {
+          width: 30vw;
+          padding: 20px;
+          background-color: #141414;
+          color: white;
+          font-size: 1.5rem;
+          position: absolute;
+          right: 5%;
+          top: 35%;
+          border-radius: 10px;
+      }
+      
+      .finalinfo span {
+          color: red;
+      }
+      
+      .info {
+          font-size: 1.2rem;
+          font-style: italic;
+          margin-top: 10px;
+      }
+      
+      /* Chat Bot Icon */
+      .bot {
+          position: absolute;
+          bottom: 20px;
+          right: 20px;
+          background-color: red;
+          padding: 10px;
+          border-radius: 50%;
+      }
+      
+      .bot a {
+          color: white;
+          font-size: 1.5rem;
+          text-decoration: none;
+      }
+      
+      .bot a:hover {
+          color: black;
+      }
+      
+      /* Typing Animation */
+      @keyframes typing {
+          from { width: 0; }
+          to { width: 100%; }
+      }
+      
+      @keyframes blink-caret {
+          50% { border-color: transparent; }
+      }
+      
+      /* Responsive */
+      @media screen and (max-width: 1024px) {
+          .nav ul {
+              gap: 15px;
+          }
+      
+          .main {
+              font-size: 2rem;
+          }
+      
+          .finalinfo {/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+/* Navbar */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.nav img {
+    width: 100px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: red;
+}
+
+/* Mobile Menu Icon */
+.menu-icon {
+    display: none;
+    font-size: 1.8rem;
+    color: white;
+    cursor: pointer;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: black;
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 200px;
+    text-align: center;
+    z-index: 100;
+}
+
+.dropdown-menu.active {
+    display: block;
+}
+
+.dropdown-menu li {
+    list-style: none;
+    padding: 10px;
+    border-bottom: 1px solid gray;
+}
+
+.dropdown-menu li:last-child {
+    border-bottom: none;
+}
+
+.dropdown-menu li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    display: block;
+}
+
+.dropdown-menu li a:hover {
+    color: red;
+}
+
+/* Background Image */
+.backimg {
+    width: 35%;
+    position: absolute;
+    right: 30%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Main Content */
+.main {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.main span {
+    color: red;
+}
+
+/* Button */
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    color: white;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: darkred;
+}
+
+/* Footer */
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.media {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.media a {
+    font-size: 1.5rem;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.media a:hover {
+    color: red;
+}
+
+/* Info Box */
+.finalinfo {
+    width: 30vw;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    font-size: 1.5rem;
+    position: absolute;
+    right: 5%;
+    top: 35%;
+    border-radius: 10px;
+}
+
+.finalinfo span {
+    color: red;
+}
+
+/* Chat Bot Icon */
+.bot {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: red;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.bot a {
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
+
+              width: 40vw;
+              font-size: 1.2rem;
+          }
+      }
+      
+      @media screen and (max-width: 768px) {
+          .main {
+              font-size: 1.8rem;
+          }
+      
+          .finalinfo {
+              width: 50vw;
+          }
+      }
+      
+      @media screen and (max-width: 480px) {
+          .main {
+              font-size: 1.5rem;
+          }
+      
+          .finalinfo {
+              width: 60vw;
+              font-size: 1rem;
+          }
+      }
+      /* Responsive */
+      @media screen and (max-width: 768px) {
+          .desktop-menu {
+              display: none;
+          }
+      
+          .menu-btn {
+              display: block;
+          }
+      }
+      
+      @media screen and (max-width: 768px) {
+          .desktop-menu {
+              display: none !important; /* Ensures the rule is applied */
+          }
+      
+          .menu-btn {
+              display: block !important; /* Ensures the hamburger icon appears */
+          }
+      }
+      
